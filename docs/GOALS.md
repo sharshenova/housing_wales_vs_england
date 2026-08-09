@@ -20,7 +20,7 @@
 - Later: **nominal + inflation-adjusted (real)** price comparisons.
 
 **Unlock for G:** join quality explicitly accepted in [PROGRESS.md](PROGRESS.md).  
-**After join OK:** backfill PPD **1996–2014** and re-verify the pipeline.
+**£/m² join 2012–2025 done.** Next for price/volume: backfill PPD **1996–2011** and re-verify the pipeline.
 
 ## Project G — Price model (later)
 

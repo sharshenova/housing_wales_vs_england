@@ -6,7 +6,7 @@ alwaysApply: false
 
 # Data pipeline
 
-- Respect `configs/join.yaml` windows: prototype join on `year_from_join_prototype`–`year_to` while `use_prototype_window` is true; full price series uses `year_from_price_only`; £/m² uses `year_from_epc_metrics`.
+- Respect `configs/join.yaml` windows: £/m² join uses `year_from_epc_metrics`–`year_to`; full price series uses `year_from_price_only`.
 - Limitations and rationale: `docs/data/year_range_analysis.md`.
 - Filter to configured cities early; do not require the full 5GB Price Paid file in memory if yearly files suffice.
 - Log join method (UPRN vs normalised address) and match rate **by sale year** in `docs/data/` or PROGRESS.

@@ -28,4 +28,5 @@ Contains HM Land Registry data © Crown copyright and database right. This data 
 
 ## Join quality log
 
+Current run: [join_epc_metrics_2012_2025_run.md](join_epc_metrics_2012_2025_run.md) · [join_match_report_2012_2025.md](join_match_report_2012_2025.md).  
 Record match rates after each join run (date, rows, % matched, method).

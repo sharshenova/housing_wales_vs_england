@@ -145,7 +145,7 @@ Fine for MVP dashboards and join prototyping; **too short** as the final “how 
 
 ### Config (locked)
 
-See `configs/join.yaml`: `year_from_price_only: 1996`, `year_from_epc_metrics: 2012`, `year_from_join_prototype: 2015`, `years_pending_ppd_backfill: 1996–2014`.
+See `configs/join.yaml`: `year_from_price_only: 1996`, `year_from_epc_metrics: 2012`, `years_pending_ppd_backfill: 1996–2011` (2012–2014 downloaded; £/m² join done). The temporary `year_from_join_prototype` / `use_prototype_window` keys were removed after the 2012–2025 join landed.
 
 **Inflation:** planned later — nominal + real (deflator TBD, likely ONS CPIH); `inflation.enabled: false` until investigated.
 

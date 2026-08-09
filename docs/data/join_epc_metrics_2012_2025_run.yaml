@@ -1,0 +1,226 @@
+epc:
+  rows: 499054
+  min_lodgement: '2012-01-01 00:00:00'
+  max_lodgement: '2026-07-31 00:00:00'
+download:
+  '2012':
+    bytes: 115479621
+    mb: 115.5
+  '2013':
+    bytes: 140171146
+    mb: 140.2
+  '2014':
+    bytes: 170480053
+    mb: 170.5
+filter:
+  rows_total: 285608
+  rows_prev_approx: 231526
+  rows_2012_2014: 54082
+  by_year:
+    2012: 14772
+    2013: 17617
+    2014: 21693
+    2015: 21677
+    2016: 22240
+    2017: 22718
+    2018: 22454
+    2019: 21430
+    2020: 17438
+    2021: 25362
+    2022: 22018
+    2023: 18185
+    2024: 18994
+    2025: 19010
+prepare:
+  rows: 251821
+  rows_by_city:
+    bath: 41478
+    bristol: 97101
+    cardiff: 70163
+    swansea: 43079
+  missing_postcode: 88
+join_new:
+  matched: 169100
+  matchable: 251733
+  match_rate: 0.6717
+  tier_full: 167739
+  tier_loose: 1361
+  price_per_m2_median: 2848.1012658227846
+  by_city:
+  - city: bath
+    sales: 41465
+    matched: 25867
+    match_rate: 0.6238
+  - city: bristol
+    sales: 97064
+    matched: 60531
+    match_rate: 0.6236
+  - city: cardiff
+    sales: 70139
+    matched: 49723
+    match_rate: 0.7089
+  - city: swansea
+    sales: 43065
+    matched: 32979
+    match_rate: 0.7658
+  by_year:
+  - sale_year: 2012
+    sales: 14763
+    matched: 5888
+    match_rate: 0.3988
+  - sale_year: 2013
+    sales: 17196
+    matched: 10025
+    match_rate: 0.583
+  - sale_year: 2014
+    sales: 20415
+    matched: 11526
+    match_rate: 0.5646
+  - sale_year: 2015
+    sales: 19927
+    matched: 11459
+    match_rate: 0.575
+  - sale_year: 2016
+    sales: 19935
+    matched: 11758
+    match_rate: 0.5898
+  - sale_year: 2017
+    sales: 19657
+    matched: 12181
+    match_rate: 0.6197
+  - sale_year: 2018
+    sales: 19228
+    matched: 12724
+    match_rate: 0.6617
+  - sale_year: 2019
+    sales: 18055
+    matched: 12936
+    match_rate: 0.7165
+  - sale_year: 2020
+    sales: 14811
+    matched: 11198
+    match_rate: 0.7561
+  - sale_year: 2021
+    sales: 21733
+    matched: 16980
+    match_rate: 0.7813
+  - sale_year: 2022
+    sales: 18770
+    matched: 14570
+    match_rate: 0.7762
+  - sale_year: 2023
+    sales: 15139
+    matched: 12044
+    match_rate: 0.7956
+  - sale_year: 2024
+    sales: 15836
+    matched: 12585
+    match_rate: 0.7947
+  - sale_year: 2025
+    sales: 16268
+    matched: 13226
+    match_rate: 0.813
+join_proto:
+  matched: 141661
+  matchable: 199359
+  match_rate: 0.7106
+  tier_full: 140464
+  tier_loose: 1197
+  price_per_m2_median: 3037.037037037037
+  by_city:
+  - city: bath
+    sales: 32646
+    matched: 21573
+    match_rate: 0.6608
+  - city: bristol
+    sales: 76033
+    matched: 50109
+    match_rate: 0.659
+  - city: cardiff
+    sales: 55834
+    matched: 41809
+    match_rate: 0.7488
+  - city: swansea
+    sales: 34846
+    matched: 28170
+    match_rate: 0.8084
+  by_year:
+  - sale_year: 2015
+    sales: 19927
+    matched: 11459
+    match_rate: 0.575
+  - sale_year: 2016
+    sales: 19935
+    matched: 11758
+    match_rate: 0.5898
+  - sale_year: 2017
+    sales: 19657
+    matched: 12181
+    match_rate: 0.6197
+  - sale_year: 2018
+    sales: 19228
+    matched: 12724
+    match_rate: 0.6617
+  - sale_year: 2019
+    sales: 18055
+    matched: 12936
+    match_rate: 0.7165
+  - sale_year: 2020
+    sales: 14811
+    matched: 11198
+    match_rate: 0.7561
+  - sale_year: 2021
+    sales: 21733
+    matched: 16980
+    match_rate: 0.7813
+  - sale_year: 2022
+    sales: 18770
+    matched: 14570
+    match_rate: 0.7762
+  - sale_year: 2023
+    sales: 15139
+    matched: 12044
+    match_rate: 0.7956
+  - sale_year: 2024
+    sales: 15836
+    matched: 12585
+    match_rate: 0.7947
+  - sale_year: 2025
+    sales: 16268
+    matched: 13226
+    match_rate: 0.813
+sanity_2015_plus_in_new:
+  matchable: 199359
+  matched: 141661
+  match_rate: 0.7106
+  proto_match_rate: 0.7106
+  rate_diff_pp: -0.0
+early_2012_2014:
+  matchable: 52374
+  matched: 27439
+  match_rate: 0.5239
+median_ppm2_proto:
+  bath: 3768.0
+  bristol: 3590.0
+  cardiff: 2773.0
+  swansea: 1887.0
+median_ppm2_new:
+  bath: 3571.0
+  bristol: 3370.0
+  cardiff: 2626.0
+  swansea: 1818.0
+nulls_proto:
+  built_form: 0.0064
+  construction_age_band: 0.0
+  current_energy_efficiency: 0.0
+  number_habitable_rooms: 0.1159
+  total_floor_area: 0.0
+  current_energy_rating: 0.0
+nulls_new:
+  built_form: 0.0069
+  construction_age_band: 0.0
+  current_energy_efficiency: 0.0
+  number_habitable_rooms: 0.1091
+  total_floor_area: 0.0
+  current_energy_rating: 0.0
+n_cols_new: 47

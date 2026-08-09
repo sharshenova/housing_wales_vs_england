@@ -1,0 +1,196 @@
+source: /Users/mashukan/Documents/1 Data Analytics/projects/portfolio_projects/city_value_housing/data/interim/ppd_four_cities.parquet
+output: /Users/mashukan/Documents/1 Data Analytics/projects/portfolio_projects/city_value_housing/data/interim/ppd_join_2012_2025.parquet
+year_from: 2012
+year_to: 2025
+ppd_category: A
+property_types:
+- D
+- S
+- T
+- F
+rows: 251821
+rows_by_city:
+  bath: 41478
+  bristol: 97101
+  cardiff: 70163
+  swansea: 43079
+rows_by_property_type:
+  D: 35213
+  F: 62286
+  S: 61695
+  T: 92627
+missing_postcode: 88
+pct_missing_postcode: 0.0003
+unique_address_keys: 190724
+price_min: 500.0
+price_median: 239950.0
+price_max: 20000000.0
+by_city_year:
+- city: bath
+  sale_year: 2012
+  n: 2527
+- city: bath
+  sale_year: 2013
+  n: 2932
+- city: bath
+  sale_year: 2014
+  n: 3365
+- city: bath
+  sale_year: 2015
+  n: 3393
+- city: bath
+  sale_year: 2016
+  n: 3302
+- city: bath
+  sale_year: 2017
+  n: 3012
+- city: bath
+  sale_year: 2018
+  n: 3092
+- city: bath
+  sale_year: 2019
+  n: 2872
+- city: bath
+  sale_year: 2020
+  n: 2565
+- city: bath
+  sale_year: 2021
+  n: 3723
+- city: bath
+  sale_year: 2022
+  n: 2943
+- city: bath
+  sale_year: 2023
+  n: 2442
+- city: bath
+  sale_year: 2024
+  n: 2568
+- city: bath
+  sale_year: 2025
+  n: 2742
+- city: bristol
+  sale_year: 2012
+  n: 5942
+- city: bristol
+  sale_year: 2013
+  n: 6858
+- city: bristol
+  sale_year: 2014
+  n: 8237
+- city: bristol
+  sale_year: 2015
+  n: 7994
+- city: bristol
+  sale_year: 2016
+  n: 7692
+- city: bristol
+  sale_year: 2017
+  n: 7691
+- city: bristol
+  sale_year: 2018
+  n: 7184
+- city: bristol
+  sale_year: 2019
+  n: 6585
+- city: bristol
+  sale_year: 2020
+  n: 5674
+- city: bristol
+  sale_year: 2021
+  n: 8488
+- city: bristol
+  sale_year: 2022
+  n: 7020
+- city: bristol
+  sale_year: 2023
+  n: 5765
+- city: bristol
+  sale_year: 2024
+  n: 5885
+- city: bristol
+  sale_year: 2025
+  n: 6086
+- city: cardiff
+  sale_year: 2012
+  n: 3942
+- city: cardiff
+  sale_year: 2013
+  n: 4646
+- city: cardiff
+  sale_year: 2014
+  n: 5721
+- city: cardiff
+  sale_year: 2015
+  n: 5413
+- city: cardiff
+  sale_year: 2016
+  n: 5531
+- city: cardiff
+  sale_year: 2017
+  n: 5472
+- city: cardiff
+  sale_year: 2018
+  n: 5618
+- city: cardiff
+  sale_year: 2019
+  n: 5447
+- city: cardiff
+  sale_year: 2020
+  n: 3987
+- city: cardiff
+  sale_year: 2021
+  n: 5735
+- city: cardiff
+  sale_year: 2022
+  n: 5490
+- city: cardiff
+  sale_year: 2023
+  n: 4193
+- city: cardiff
+  sale_year: 2024
+  n: 4483
+- city: cardiff
+  sale_year: 2025
+  n: 4485
+- city: swansea
+  sale_year: 2012
+  n: 2355
+- city: swansea
+  sale_year: 2013
+  n: 2765
+- city: swansea
+  sale_year: 2014
+  n: 3104
+- city: swansea
+  sale_year: 2015
+  n: 3134
+- city: swansea
+  sale_year: 2016
+  n: 3423
+- city: swansea
+  sale_year: 2017
+  n: 3486
+- city: swansea
+  sale_year: 2018
+  n: 3340
+- city: swansea
+  sale_year: 2019
+  n: 3157
+- city: swansea
+  sale_year: 2020
+  n: 2593
+- city: swansea
+  sale_year: 2021
+  n: 3791
+- city: swansea
+  sale_year: 2022
+  n: 3319
+- city: swansea
+  sale_year: 2023
+  n: 2740
+- city: swansea
+  sale_year: 2024
+  n: 2907
+- city: swansea
+  sale_year: 2025
+  n: 2965

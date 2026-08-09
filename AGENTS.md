@@ -17,11 +17,10 @@ Housing idea brainstorm (A–H): [`../plans/uk_wales_housing_project_ideas.md`](
 | Layer | Years | Config keys |
 |-------|-------|-------------|
 | Price / volume | **1996–2025** | `year_from_price_only` … `year_to` |
-| £/m² + modelling | **2012–2025** | `year_from_epc_metrics` … `year_to` |
-| Join prototype (now) | **2015–2025** | `year_from_join_prototype`; `use_prototype_window: true` |
-| PPD still to download | **1996–2014** | `years_pending_ppd_backfill` |
+| £/m² + linked PPD↔EPC | **2012–2025** | `year_from_epc_metrics` … `year_to` |
+| PPD still to download | **1996–2011** | `years_pending_ppd_backfill` |
 
-**Workflow:** prove EPC join on 2015–2025 → accept match rate → backfill 1996–2014 → re-filter / re-aggregate → confirm everything still works.  
+**Workflow:** £/m² join 2012–2025 done → backfill price-only 1996–2011 → re-filter / re-aggregate.  
 **Inflation (later):** nominal **and** real prices (`inflation` in `join.yaml`; method TBD, likely ONS CPIH).
 
 ## Agent workflow
@@ -84,7 +83,7 @@ tableau/          # Exports / notes for Tableau Public (no huge extracts in git)
 
 - Do not invent match rates or price statistics — compute or cite.
 - Do not claim £/m² (or size-based insights) for years before `year_from_epc_metrics` (2012).
-- Do not forget PPD backfill **1996–2014** after the join prototype is accepted.
+- Do not forget PPD backfill **1996–2011** for the long price/volume series.
 - Do not start Project G modelling until Project F join quality is accepted in PROGRESS.
 - Do not commit unless the user explicitly asks.
 - Do not expand to all of England/Wales until the four-city pipeline works.

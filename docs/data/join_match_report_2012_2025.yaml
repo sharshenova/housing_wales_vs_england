@@ -1,0 +1,90 @@
+ppd_rows_input: 251821
+ppd_rows_matchable: 251733
+ppd_rows_excluded_no_postcode_or_paon: 88
+epc_rows_after_area_filter: 412680
+matched: 169100
+unmatched: 82633
+match_rate: 0.6717
+tier_full: 167739
+tier_loose: 1361
+sales_with_multi_epc_candidates_full: 48859
+sales_with_multi_epc_candidates_loose: 1279
+price_per_m2_median: 2848.1012658227846
+price_per_m2_p05: 1249.2369719926548
+price_per_m2_p95: 5181.168806788313
+linked_path: /Users/mashukan/Documents/1 Data Analytics/projects/portfolio_projects/city_value_housing/data/processed/ppd_epc_linked_2012_2025.parquet
+unmatched_path: /Users/mashukan/Documents/1 Data Analytics/projects/portfolio_projects/city_value_housing/data/processed/ppd_epc_unmatched_2012_2025.parquet
+by_city:
+- city: bath
+  sales: 41465
+  matched: 25867
+  match_rate: 0.6238
+- city: bristol
+  sales: 97064
+  matched: 60531
+  match_rate: 0.6236
+- city: cardiff
+  sales: 70139
+  matched: 49723
+  match_rate: 0.7089
+- city: swansea
+  sales: 43065
+  matched: 32979
+  match_rate: 0.7658
+by_year:
+- sale_year: 2012
+  sales: 14763
+  matched: 5888
+  match_rate: 0.3988
+- sale_year: 2013
+  sales: 17196
+  matched: 10025
+  match_rate: 0.583
+- sale_year: 2014
+  sales: 20415
+  matched: 11526
+  match_rate: 0.5646
+- sale_year: 2015
+  sales: 19927
+  matched: 11459
+  match_rate: 0.575
+- sale_year: 2016
+  sales: 19935
+  matched: 11758
+  match_rate: 0.5898
+- sale_year: 2017
+  sales: 19657
+  matched: 12181
+  match_rate: 0.6197
+- sale_year: 2018
+  sales: 19228
+  matched: 12724
+  match_rate: 0.6617
+- sale_year: 2019
+  sales: 18055
+  matched: 12936
+  match_rate: 0.7165
+- sale_year: 2020
+  sales: 14811
+  matched: 11198
+  match_rate: 0.7561
+- sale_year: 2021
+  sales: 21733
+  matched: 16980
+  match_rate: 0.7813
+- sale_year: 2022
+  sales: 18770
+  matched: 14570
+  match_rate: 0.7762
+- sale_year: 2023
+  sales: 15139
+  matched: 12044
+  match_rate: 0.7956
+- sale_year: 2024
+  sales: 15836
+  matched: 12585
+  match_rate: 0.7947
+- sale_year: 2025
+  sales: 16268
+  matched: 13226
+  match_rate: 0.813

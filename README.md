@@ -16,7 +16,7 @@ Built as a portfolio project (Python + DuckDB/SQL + Tableau Public), with a reus
 
 See [docs/PROGRESS.md](docs/PROGRESS.md). Goals and agent workflow: [AGENTS.md](AGENTS.md), [docs/GOALS.md](docs/GOALS.md).
 
-**Analysis windows (Option A):** price/volume **1996–2025**; £/m² **2012–2025** (join prototype on **2015–2025** first). Details and limitations: [docs/data/year_range_analysis.md](docs/data/year_range_analysis.md).
+**Analysis windows (Option A):** price/volume **1996–2025**; £/m² **2012–2025** (linked table ready). Details and limitations: [docs/data/year_range_analysis.md](docs/data/year_range_analysis.md).
 
 ## Setup
 

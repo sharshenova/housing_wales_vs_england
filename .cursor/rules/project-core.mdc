@@ -7,8 +7,8 @@ alwaysApply: true
 
 - Read `docs/PROGRESS.md` at session start; update it before ending substantive work.
 - Goals: Project F (Swansea/Cardiff/Bristol/Bath value + Tableau) first; Project G only after join quality is accepted.
-- Year windows (Option A): price **1996–2025**, £/m² **2012–2025**, join prototype **2015–2025** first — see `docs/data/year_range_analysis.md` and `configs/join.yaml`.
-- After join match rate is accepted: backfill PPD **1996–2014** (`years_pending_ppd_backfill`) and re-check the pipeline.
+- Year windows (Option A): price **1996–2025**, £/m² **2012–2025** — see `docs/data/year_range_analysis.md` and `configs/join.yaml`.
+- Primary linked table: `data/processed/ppd_epc_linked_2012_2025.parquet`; backfill price-only PPD **1996–2011** when ready.
 - Do not present £/m² charts for pre-2012 sales. Label price-only vs £/m² clearly.
 - Inflation (later): plan for nominal + real prices (`inflation` in `join.yaml`).
 - Career context: `../plans/portfolio_career_strategy.md`.
