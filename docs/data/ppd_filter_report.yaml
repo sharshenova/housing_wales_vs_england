@@ -1,0 +1,7 @@
+rows: 231526
+districts_upper:
+- BATH AND NORTH EAST SOMERSET
+- CARDIFF
+- CITY OF BRISTOL
+- SWANSEA
+output: /Users/mashukan/Documents/1 Data Analytics/projects/portfolio_projects/city_value_housing/data/interim/ppd_four_cities.parquet
