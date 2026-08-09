@@ -1,0 +1,12 @@
+# Paths relative to project root
+
+data:
+  raw_ppd: data/raw/ppd
+  raw_epc: data/raw/epc
+  interim: data/interim
+  processed: data/processed
+  external: data/external
+
+outputs:
+  tableau: tableau/exports
+  reports: docs/data

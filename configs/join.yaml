@@ -1,0 +1,46 @@
+# Price Paid ↔ EPC join and analysis windows (Option A — locked 2026-08-09)
+# Full rationale / limitations: docs/data/year_range_analysis.md
+# Decision record: docs/decisions/002-year-windows-option-a.md
+
+seed: 42
+
+ppd:
+  year_to: 2025
+  # Long price / volume story (post-Avon LA geography for Bath/Bristol)
+  year_from_price_only: 1996
+  # £/m² and Project G features (EPC bulk open data typically from ~2012)
+  year_from_epc_metrics: 2012
+  # Prototype Price Paid ↔ EPC join on this window first; prove match rate
+  year_from_join_prototype: 2015
+  # After join quality is accepted: download + filter these years into the pipeline
+  years_pending_ppd_backfill: [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]
+  # Standard Price Paid property types: D S T F O (exclude O for core residential KPIs)
+  property_types:
+    - D
+    - S
+    - T
+    - F
+  # Prefer Category A for clean residential comps (B exists from Oct 2013 only)
+  ppd_category: A
+
+epc:
+  # Prefer certificate before sale; else earliest after within window
+  max_years_before: 10
+  max_years_after: 2
+  min_floor_area_m2: 15
+  max_floor_area_m2: 500
+
+join:
+  # Tier order: try exact normalised address within postcode, then looser keys
+  require_postcode: true
+  min_match_rate_warn: 0.70
+  # Work on prototype years until match rate is accepted in docs/PROGRESS.md
+  use_prototype_window: true
+
+inflation:
+  # TODO: investigate proper deflator (likely ONS CPIH) — show nominal AND real prices
+  enabled: false
+  method: TBD  # e.g. CPIH index, base year TBD
+  show_nominal: true
+  show_real: true  # once enabled
+  notes: See docs/data/year_range_analysis.md (Factor 5) and docs/PROGRESS.md backlog

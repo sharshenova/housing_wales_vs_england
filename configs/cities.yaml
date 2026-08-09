@@ -1,0 +1,72 @@
+# Local authority districts / names as they appear in Price Paid "district" field.
+# Refine after inspecting real PPD values (names can vary slightly).
+
+cities:
+  swansea:
+    label: Swansea
+    country: Wales
+    # Price Paid district / town filters — verify against data
+    districts:
+      - Swansea
+    # Postcode area prefixes for optional filtering / maps
+    postcode_areas:
+      - SA1
+      - SA2
+      - SA3
+      - SA4
+      - SA5
+      - SA6
+      - SA7
+      - SA8
+      - SA9
+
+  cardiff:
+    label: Cardiff
+    country: Wales
+    # Verified against PPD 2024 district field (exact match after upper/trim)
+    districts:
+      - Cardiff
+      # Optional neighbour LA — exclude from core Cardiff KPIs unless analysing catchment
+      # - The Vale Of Glamorgan
+    postcode_areas:
+      - CF1
+      - CF2
+      - CF3
+      - CF5
+      - CF10
+      - CF11
+      - CF14
+      - CF15
+      - CF23
+      - CF24
+
+  bristol:
+    label: Bristol
+    country: England
+    districts:
+      - City Of Bristol  # PPD 2024 uses this form (not bare "Bristol")
+    postcode_areas:
+      - BS1
+      - BS2
+      - BS3
+      - BS4
+      - BS5
+      - BS6
+      - BS7
+      - BS8
+      - BS9
+      - BS10
+      - BS11
+      - BS13
+      - BS14
+      - BS15
+      - BS16
+
+  bath:
+    label: Bath
+    country: England
+    districts:
+      - Bath And North East Somerset
+    postcode_areas:
+      - BA1
+      - BA2
