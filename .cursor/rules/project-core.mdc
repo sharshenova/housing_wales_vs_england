@@ -1,0 +1,17 @@
+---
+description: Always-on project goals and session workflow for city_value_housing
+alwaysApply: true
+---
+
+# City Value Housing — core
+
+- Read `docs/PROGRESS.md` at session start; update it before ending substantive work.
+- Goals: Project F (Swansea/Cardiff/Bristol/Bath value + Tableau) first; Project G only after join quality is accepted.
+- Year windows (Option A): price **1996–2025**, £/m² **2012–2025**, join prototype **2015–2025** first — see `docs/data/year_range_analysis.md` and `configs/join.yaml`.
+- After join match rate is accepted: backfill PPD **1996–2014** (`years_pending_ppd_backfill`) and re-check the pipeline.
+- Do not present £/m² charts for pre-2012 sales. Label price-only vs £/m² clearly.
+- Inflation (later): plan for nominal + real prices (`inflation` in `join.yaml`).
+- Career context: `../plans/portfolio_career_strategy.md`.
+- Never invent statistics or match rates — compute them.
+- Never commit large `data/` dumps or secrets.
+- Prefer logic in `src/city_value/`; thin `scripts/`; notebooks for exploration only.

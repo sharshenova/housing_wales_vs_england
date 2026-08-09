@@ -1,0 +1,20 @@
+---
+description: Python coding standards for src and tests
+globs: "{src/**/*.py,tests/**/*.py,scripts/**/*.py}"
+alwaysApply: false
+---
+
+# Python standards
+
+- Type hints on all public functions.
+- `snake_case` for functions/variables, `PascalCase` for classes.
+- No hardcoded absolute paths — use config or pathlib relative to project root.
+- Reusable logic in `src/city_value/`, not in notebooks.
+
+```python
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[2]
+```
+
+- Add new dependencies to `pyproject.toml` before importing.
+- Run `ruff check` / `ruff format` on touched Python before considering work done.

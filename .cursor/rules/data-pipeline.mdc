@@ -1,0 +1,17 @@
+---
+description: Rules for Price Paid / EPC data handling
+globs: "{src/**/*.py,scripts/**/*.py,configs/**/*.yaml,docs/data/**}"
+alwaysApply: false
+---
+
+# Data pipeline
+
+- Respect `configs/join.yaml` windows: prototype join on `year_from_join_prototype`–`year_to` while `use_prototype_window` is true; full price series uses `year_from_price_only`; £/m² uses `year_from_epc_metrics`.
+- Limitations and rationale: `docs/data/year_range_analysis.md`.
+- Filter to configured cities early; do not require the full 5GB Price Paid file in memory if yearly files suffice.
+- Log join method (UPRN vs normalised address) and match rate **by sale year** in `docs/data/` or PROGRESS.
+- For each sale, prefer the EPC lodged closest in time (prefer before sale, fallback after within a documented window).
+- Exclude implausible floor areas (e.g. 0 or extreme outliers) before £/m²; document thresholds in config.
+- After join accepted: run `python scripts/download_ppd.py --backfill-pending`, re-filter, and confirm aggregates still work.
+- Inflation adjustment (nominal + real) is planned but not enabled until `inflation.enabled` is true.
+- Always keep OGL / EPC attribution notes when publishing aggregates.
