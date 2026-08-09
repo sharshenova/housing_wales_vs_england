@@ -11,3 +11,12 @@ def test_address_key_stable() -> None:
     k2 = address_key("cf101aa", "10", "", "HIGH STREET")
     assert k1 == k2
     assert normalise_token("Flat 2!") == "FLAT 2"
+
+
+def test_nan_saon_not_literal() -> None:
+    import math
+
+    k = address_key("CF10 1AA", "10", float("nan"), "HIGH STREET")
+    assert "|NAN|" not in k
+    assert k == "CF10 1AA||10|HIGH STREET"
+    assert normalise_token(math.nan) == ""
