@@ -31,9 +31,10 @@ def download_year(year: int, dest_dir: Path, client: httpx.Client) -> Path:
     with client.stream("GET", url, follow_redirects=True) as resp:
         resp.raise_for_status()
         total = int(resp.headers.get("content-length", 0))
-        with out.open("wb") as f, tqdm(
-            total=total or None, unit="B", unit_scale=True, desc=str(year)
-        ) as bar:
+        with (
+            out.open("wb") as f,
+            tqdm(total=total or None, unit="B", unit_scale=True, desc=str(year)) as bar,
+        ):
             for chunk in resp.iter_bytes():
                 f.write(chunk)
                 bar.update(len(chunk))
@@ -56,21 +57,12 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Download only years listed in ppd.years_pending_ppd_backfill",
     )
-    parser.add_argument(
-        "--prototype",
-        action="store_true",
-        help="Download join-prototype window only (year_from_join_prototype..year_to)",
-    )
     args = parser.parse_args(argv)
 
     if args.years is not None:
         years = args.years
     elif args.backfill_pending:
         years = list(ppd["years_pending_ppd_backfill"])
-    elif args.prototype:
-        years = list(
-            range(int(ppd["year_from_join_prototype"]), int(ppd["year_to"]) + 1)
-        )
     else:
         years = list(range(int(ppd["year_from_price_only"]), int(ppd["year_to"]) + 1))
 

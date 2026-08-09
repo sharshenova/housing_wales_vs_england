@@ -10,10 +10,8 @@ ppd:
   year_from_price_only: 1996
   # £/m² and Project G features (EPC bulk open data typically from ~2012)
   year_from_epc_metrics: 2012
-  # Prototype Price Paid ↔ EPC join on this window first; prove match rate
-  year_from_join_prototype: 2015
-  # After join quality is accepted: download + filter these years into the pipeline
-  years_pending_ppd_backfill: [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]
+  # Price-only years still pending download
+  years_pending_ppd_backfill: [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011]
   # Standard Price Paid property types: D S T F O (exclude O for core residential KPIs)
   property_types:
     - D
@@ -34,8 +32,6 @@ join:
   # Tier order: try exact normalised address within postcode, then looser keys
   require_postcode: true
   min_match_rate_warn: 0.70
-  # Work on prototype years until match rate is accepted in docs/PROGRESS.md
-  use_prototype_window: true
 
 inflation:
   # TODO: investigate proper deflator (likely ONS CPIH) — show nominal AND real prices
